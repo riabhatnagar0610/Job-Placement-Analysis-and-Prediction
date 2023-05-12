@@ -64,51 +64,9 @@ Data exploration is the first step of data analysis used to explore and visualiz
 
 
 ### Machine Learning Models
-First and foremost we'll import all the libraries needed for building the models:
-
-// 
-
-import numpy as np
-
-import pandas as pd
-
-import seaborn as sns
-
-import matplotlib.pyplot as plt
-
-from sklearn.model_selection import train_test_split
-
-from sklearn.linear_model import LogisticRegression
-
-from sklearn.metrics import accuracy_score,confusion_matrix
-
-from sklearn.svm import SVC
-
-from sklearn.naive_bayes import GaussianNB
-
-from sklearn.neighbors import KNeighborsClassifier
-
-from sklearn.tree import DecisionTreeClassifier
-
-from sklearn.ensemble import RandomForestClassifier
-
-from xgboost.sklearn import XGBClassifier
-
-//
+First and foremost we'll import all the libraries needed for building the models, for example Numpy, Pandas, SkLearn etc.
 
 In the dataset we have a mix of categorical and numerical data. To build prediction models, we need to convert the categorical data into numerical.
-
-For example, the below mentioned code converts the categorical data into binary:
-
-//
-
-data['gender'].value_counts()
-
-gender_n = {'M':0,'F':1}
-
-data['gender']=data['gender'].map(gender_n)
-
-//
 
 After conversion we'll build the prediction models using the following:
 - Logistic Regression (accuracy - 0.8604651162790697)
@@ -118,12 +76,11 @@ After conversion we'll build the prediction models using the following:
 - Random Forest Classifier (accuracy - 0.9069767441860465)
 - XGB Classifier (accuracy - 0.8837209302325582)
 
-
-  
+ 
 ## Notes
 
 If you find this insightful, feel free to star it. Any issues can be notified to me.
 
 If you wanna work with this analysis, you can:
 
-Clone the repository, or Fork the repository. Then, can make changes as you wish.
+Clone the repository, or Fork the repository. Then, you can make changes as you wish.
