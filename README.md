@@ -42,7 +42,7 @@ These models are trained on the provided dataset to learn patterns and make accu
 
 ## Evaluation
 To evaluate the performance of the machine learning models, the project utilizes various metrics such as accuracy, precision, recall, and F1 score. These metrics provide insights into the model's ability to correctly predict job placement outcomes.
-The highest accuracy received is 91% from Random Forest Classifier and K Neighbors classifier.
+The highest accuracy acheived is 91% from Random Forest Classifier and K Neighbors classifier.
 
 ## Contributing
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
