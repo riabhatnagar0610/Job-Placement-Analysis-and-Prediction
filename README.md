@@ -27,9 +27,7 @@ The dataset used in this project consists of candidate profiles with various att
 The candidate features considered in this project include:
 - Education: Candidate's educational background (e.g., degree, field of study).
 - Experience: Candidate's previous work experience (e.g., number of years, job titles).
-- Skills: Candidate's skills and qualifications relevant to the job.
-- Certifications: Any certifications or training courses completed by the candidate.
-- Location: Geographic location of the candidate.
+- Specialisation: Candidate's skills and qualifications relevant to the job.
 - Industry: The industry in which the candidate is seeking a job placement.
 
 ## Modeling
