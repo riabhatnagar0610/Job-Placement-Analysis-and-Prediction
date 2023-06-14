@@ -25,10 +25,11 @@ The dataset used in this project consists of candidate profiles with various att
 
 ## Features
 The candidate features considered in this project include:
-- Education: Candidate's educational background (e.g., degree, field of study).
-- Experience: Candidate's previous work experience (e.g., number of years, job titles).
+- Education: Candidate's educational background (e.g., degree, field of study, board percentage).
+- Experience: Candidate's previous work experience (e.g., number of years).
 - Specialisation: Candidate's skills and qualifications relevant to the job.
 - Industry: The industry in which the candidate is seeking a job placement.
+- Gender: It plays an important role in finding out the ratio of women to men and if there exists any bias.
 
 ## Modeling
 The project utilizes various machine learning algorithms to predict job placement outcomes. Some of the models employed are:
