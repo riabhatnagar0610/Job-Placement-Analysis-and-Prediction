@@ -1,86 +1,49 @@
-
 # You're Hired!
 
-This project performs job placement analyis and consists of machine learning models to predict which candidate will get hired based on certain criteria. 
+This project aims to analyze candidate data and build machine learning models to predict whether a candidate will be hired or not. The project focuses on leveraging various features from candidate profiles, such as education, experience, skills, etc., to predict job placement outcomes accurately.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Data](#data)
+- [Features](#features)
+- [Modeling](#modeling)
+- [Evaluation](#evaluation)
+- [Contributing](#contributing)
 
 
-## Roadmap
+## Introduction
+In today's competitive job market, it is crucial for both candidates and recruiters to make informed decisions. This project offers an automated solution to predict job placement outcomes based on candidate data. By analyzing various features, the machine learning models aim to provide insights into a candidate's likelihood of being hired.
 
-- Downloading the dataset and uploading it to Kaggle and Microsoft Excel
+## Installation
+To use this project, you need to have Python 3.x installed on your system. Clone the repository and install the required dependencies using the following command:
 
-- Performing data cleaning and exploration
+pip install -r requirements.txt
 
-- Identifying trends and correlation between data features and target
+## Data
+The dataset used in this project consists of candidate profiles with various attributes, such as education, experience, skills, and more. It is important to ensure that the dataset is properly prepared and formatted before running the project. The `data.csv` file contains the dataset used for analysis and prediction. 
 
-- Building machine learning prediction models 
+## Features
+The candidate features considered in this project include:
+- Education: Candidate's educational background (e.g., degree, field of study).
+- Experience: Candidate's previous work experience (e.g., number of years, job titles).
+- Skills: Candidate's skills and qualifications relevant to the job.
+- Certifications: Any certifications or training courses completed by the candidate.
+- Location: Geographic location of the candidate.
+- Industry: The industry in which the candidate is seeking a job placement.
 
+## Modeling
+The project utilizes various machine learning algorithms to predict job placement outcomes. Some of the models employed are:
+- Logistic Regression
+- Random Forest
+- Support Vector Machine (SVM)
+- Gradient Boosting
 
-## Project Workflow
+These models are trained on the provided dataset to learn patterns and make accurate predictions.
 
-### Dataset
+## Evaluation
+To evaluate the performance of the machine learning models, the project utilizes various metrics such as accuracy, precision, recall, and F1 score. These metrics provide insights into the model's ability to correctly predict job placement outcomes.
+The highest accuracy received is 91% from Random Forest Classifier and K Neighbors classifier.
 
-Context : Due to the growing need of educated and talented individuals, especially in developing countries, recruiting fresh graduates is a routine practice for organizations. Conventional recruiting methods and selection processes can be prone to errors and in order to optimize the whole process, some innovative methods are needed.
-
-The dataset used can be found at the mentioned Kaggle link (https://www.kaggle.com/datasets/ahsan81/job-placement-dataset)
-
-- This file contains different attribute of the candidates educational history and work experience. The detailed data dictionary is given below: 
-  - gender : Gender of the candidate
-  - ssc_percentage : Senior secondary exams percentage (10th Grade)
-  - ssc_board : Board of education for ssc exams
-  - hsc_percentage : Higher secondary exams percentage (12th Grade)
-  - hsc_borad : Board of education for hsc exams
-  - hsc_subject : Subject of study for hsc
-  - degree_percentage : Percentage of marks in undergrad degree
-  - undergrad_degree : Undergrad degree majors
-  - work_experience : Past work experience
-  - emp_test_percentage : Aptitude test percentage
-  - specialization : Postgrad degree majors - (MBA specialization)
-  - mba_percent : Percentage of marks in MBA degree
-  - status (TARGET) : Status of placement. Placed / Not Placed
-
-
-### Data Cleaning and Exploration 
-Data cleaning is the process of ensuring data is correct, consistent and usable. You can clean data by identifying errors or corruptions, correcting or deleting them, or manually processing data as needed to prevent the same errors from occurring.
-
-Data exploration is the first step of data analysis used to explore and visualize data to uncover insights from the start or identify areas or patterns to dig into more.
-
-- explored the dataset for any duplicates and null values and corrected it where needed
-- identifed patterns between different features of dataset and the result
-- visualised the insights generated
-
-
-### Trends and Patterns 
-- If the candidate is placed or not on the basis of :
-  - gender
-  - specialization
-  - work experience
-  - hsc_subject and hsc_percentage
-  - ssc_percentage
-
-- number of males and females applied for the job
-- from which specialization the candidates are placed in more number
-- whether work experience is required to get placed
-- which undergrad degree is best suited to get placed
-
-
-### Machine Learning Models
-First and foremost we'll import all the libraries needed for building the models, for example Numpy, Pandas, SkLearn etc.
-
-In the dataset we have a mix of categorical and numerical data. To build prediction models, we need to convert the categorical data into numerical.
-
-After conversion we'll build the prediction models using the following:
-- Logistic Regression (accuracy - 0.8604651162790697)
-- Guassian Naive Bayes (accuracy - 0.8604651162790697)
-- K Neighbors Classifier (accuracy - 0.9069767441860465)
-- Decision Tree Classifier (accuracy - 0.8604651162790697)
-- Random Forest Classifier (accuracy - 0.9069767441860465)
-- XGB Classifier (accuracy - 0.8837209302325582)
-
- 
-## Notes
-
-If you find this insightful, feel free to star it. Any issues can be notified to me.
-
-If you wanna work with this analysis, you can:
-
-Clone the repository, or Fork the repository. Then, you can make changes as you wish.
+## Contributing
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
