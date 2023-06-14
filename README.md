@@ -21,7 +21,7 @@ To use this project, you need to have Python 3.x installed on your system. Clone
 pip install -r requirements.txt
 
 ## Data
-The dataset used in this project consists of candidate profiles with various attributes, such as education, experience, skills, and more. It is important to ensure that the dataset is properly prepared and formatted before running the project. The `data.csv` file contains the dataset used for analysis and prediction. 
+The dataset used in this project consists of candidate profiles with various attributes, such as education, experience, skills, and more. It is important to ensure that the dataset is properly prepared and formatted before running the project. The `Job_Placement_Data.csv` file contains the dataset used for analysis and prediction. 
 
 ## Features
 The candidate features considered in this project include:
